@@ -1,4 +1,3 @@
-```markdown
 # erpnext_installation
 
 A collection of installation, setup, diagnostic and uninstall scripts for ERPNext deployments.
