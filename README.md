@@ -1,73 +1,102 @@
-# erpnext_installation
+# ERPNext Installation Scripts
 
-A collection of installation, setup, diagnostic and uninstall scripts for ERPNext deployments.
+A collection of installation, setup, diagnostic, and uninstall scripts for ERPNext deployments.
 
-Repository contents
-- doctor.sh — Diagnostic / health-check script (large script with many checks).
-- install-hybrid.sh — Main installer for a hybrid installation (installer script).
-- setup.sh — Initial setup / preparation script (prerequisites, user setup, dependencies).
-- uninstall.sh — Uninstaller / cleanup script.
+## Repository Contents
 
-Overview
-This repository bundles shell scripts intended to automate installation, setup and maintenance tasks for ERPNext environments. Use these scripts to prepare a server, run the installer, verify the installation, or fully remove it.
+* **doctor.sh** — Diagnostic / health-check script with extensive checks
+* **install-hybrid.sh** — Main installer for a hybrid ERPNext setup
+* **setup.sh** — Initial setup and prerequisites script
+* **uninstall.sh** — Cleanup and uninstaller script
 
-Prerequisites
-- A supported Linux server (these scripts are typically written for Debian/Ubuntu-like systems). Check the scripts for explicit OS/version assumptions before running.
-- Root or sudo access.
-- Network access to required package repositories and ERPNext resources.
-- At least a minimal familiarity with running shell scripts and reading script output/logs.
+## Overview
 
-Quick start
+This repository contains automated shell scripts to prepare servers, install ERPNext, verify system health, and perform full uninstallation. These scripts streamline deployment and maintenance for ERPNext environments.
+
+## Prerequisites
+
+* Supported Linux server (Debian/Ubuntu recommended)
+* Root or sudo access
+* Working internet connection for package repositories
+* Basic familiarity with shell scripts and logs
+
+## Quick Start
+
 1. Clone the repository:
+
+   ```bash
    git clone https://github.com/Musab1khan/erpnext_installation.git
    cd erpnext_installation
+   ```
 
 2. Make scripts executable:
-   chmod +x setup.sh install-hybrid.sh doctor.sh uninstall.sh
 
-3. Run initial setup (prepares system, dependencies, users, etc.):
+   ```bash
+   chmod +x setup.sh install-hybrid.sh doctor.sh uninstall.sh
+   ```
+
+3. Run initial setup:
+
+   ```bash
    sudo ./setup.sh
+   ```
 
 4. Run the installer:
+
+   ```bash
    sudo ./install-hybrid.sh
-   - The installer may prompt for input or require environment configuration; follow on-screen instructions.
-   - If you need a non-interactive install, inspect the script for environment variables or flags that can be set.
+   ```
+
+   * Follow on-screen instructions for any prompts.
+   * For non-interactive installation, check script variables.
 
 5. Verify the installation:
+
+   ```bash
    sudo ./doctor.sh
-   - doctor.sh contains many checks — use it to diagnose common issues and confirm services are running.
+   ```
 
-6. Uninstall / cleanup:
+6. Uninstall ERPNext:
+
+   ```bash
    sudo ./uninstall.sh
-   - Review the script before running to understand what it will remove. Backup data if needed.
+   ```
 
-Configuration and customization
-- Each script contains configuration variables and comments near the top — open them in an editor and review before running.
-- For production, make sure to:
-  - Backup existing databases and files.
-  - Review network/firewall requirements.
-  - Configure proper DNS, SSL, and system limits as required by ERPNext.
+   * Always take backups before uninstalling.
 
-Safety notes
-- Always review scripts before execution, especially when running with sudo/root privileges.
-- Test on a non-production system first.
-- Back up important data (sites, databases, config) before installing or uninstalling.
+## Configuration & Customization
 
-Troubleshooting
-- Use doctor.sh to gather diagnostic data.
-- Check system journals (journalctl), webserver logs, and ERPNext logs (usually in sites/*/logs) for errors.
-- If a step fails, copy the relevant error output and consult ERPNext community resources or open an issue with detailed logs.
+* Each script includes configuration variables at the top.
+* Review scripts before running, especially for production environments.
+* Ensure DNS, SSL, and firewall settings are properly configured.
+* Backup databases and files before installation or removal.
 
-Contributing
-- If you improve scripts or add new helpers, please open a PR with a clear description and testing notes.
-- Add tests or reproducible instructions for any new automation.
+## Safety Notes
 
-Where to look in this repo
-- setup.sh — bootstrap tasks and prerequisites
-- install-hybrid.sh — main installation workflow
-- doctor.sh — verification and diagnostic helpers
-- uninstall.sh — teardown and cleanup
+* Always inspect scripts before executing with root privileges.
+* Test on non‑production servers first.
+* Backup important data (sites, databases, logs).
 
-License
-- No license file included in the repository. Add a LICENSE file if you want to define reuse and contribution terms.
-```
+## Troubleshooting
+
+* Use **doctor.sh** for diagnostics.
+* Check system logs using `journalctl`.
+* Review ERPNext logs inside `sites/*/logs`.
+* For failures, share logs and error outputs when reporting issues.
+
+## Contributing
+
+* Submit PRs for improvements or additional scripts.
+* Include clear descriptions and test notes.
+* Add reproducible instructions for new automation features.
+
+## File Guide
+
+* **setup.sh** — System preparation
+* **install-hybrid.sh** — Main installation workflow
+* **doctor.sh** — Health-check utilities
+* **uninstall.sh** — ERPNext removal and cleanup
+
+## License
+
+No license included. Add a LICENSE file to define reuse and contribution terms.
