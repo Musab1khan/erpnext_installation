@@ -38,13 +38,13 @@ This repository contains automated shell scripts to prepare servers, install ERP
 3. Run initial setup:
 
    ```bash
-   sudo ./setup.sh
+   ./setup.sh
    ```
 
 4. Run the installer:
 
    ```bash
-   sudo ./install-hybrid.sh
+   ./install-hybrid.sh
    ```
 
    * Follow on-screen instructions for any prompts.
@@ -53,13 +53,13 @@ This repository contains automated shell scripts to prepare servers, install ERP
 5. Verify the installation:
 
    ```bash
-   sudo ./doctor.sh
+   ./doctor.sh
    ```
 
 6. Uninstall ERPNext:
 
    ```bash
-   sudo ./uninstall.sh
+   ./uninstall.sh
    ```
 
    * Always take backups before uninstalling.
