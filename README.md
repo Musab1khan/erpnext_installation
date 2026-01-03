@@ -21,18 +21,18 @@ Developer: **Umair Wali** | Contact: **+92 308 2614004**
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🎯 Main Features
-- ✅ **Web-Based GUI** - No crashes, runs in browser!
-- ✅ **3 Tabs** - Installer, Doctor, Uninstall all in one
-- ✅ **Live Package Tracking** - Real-time checkmarks ✅ as packages install
-- ✅ **Visual Progress Bar** - See installation progress live
-- ✅ **Live Console** - Watch all installation logs in real-time
-- ✅ **Remote Access** - Install from anywhere (Cloud/Local)
-- ✅ **Beautiful UI** - Modern, professional interface
+###  Main Features
+- **Web-Based GUI** - No crashes, runs in browser!
+- **3 Tabs** - Installer, Doctor, Uninstall all in one
+- **Live Package Tracking** - Real-time checkmarks as packages install
+- **Visual Progress Bar** - See installation progress live
+- **Live Console** - Watch all installation logs in real-time
+- **Remote Access** - Install from anywhere (Cloud/Local)
+- **Beautiful UI** - Modern, professional interface
 
-### 📦 What Gets Installed
+###  What Gets Installed
 - ERPNext (v13, v14, v15, or develop)
 - MariaDB database + optimization
 - Redis cache server
@@ -44,7 +44,7 @@ Developer: **Umair Wali** | Contact: **+92 308 2614004**
 
 ---
 
-## 💻 System Requirements
+##  System Requirements
 
 | Requirement | Minimum | Recommended |
 |-------------|---------|-------------|
@@ -56,7 +56,7 @@ Developer: **Umair Wali** | Contact: **+92 308 2614004**
 
 ---
 
-## 📁 Files
+##  Files
 
 ```
 erpnext_installation/
@@ -71,9 +71,9 @@ erpnext_installation/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
-### 🖥️ Local Installation (3 Steps)
+###  Local Installation (3 Steps)
 
 #### Step 1: Clone Repository
 ```bash
@@ -93,13 +93,13 @@ http://localhost:5000
 ```
 
 #### Step 4: Use GUI Tabs
-- **⚙️ Installer Tab**: Install ERPNext
-- **🏥 Doctor Tab**: Run diagnostics
-- **🗑️ Uninstall Tab**: Remove ERPNext
+- **Installer Tab**: Install ERPNext
+- **Doctor Tab**: Run diagnostics
+- **Uninstall Tab**: Remove ERPNext
 
 ---
 
-### ☁️ Cloud/Remote Installation
+###  Cloud/Remote Installation
 
 #### For Your Client's Cloud Server:
 
@@ -122,41 +122,41 @@ pip3 install flask
 # http://CLIENT_SERVER_IP:5000
 ```
 
-**📖 Detailed Guide**: See [CLOUD_DEPLOYMENT.md](CLOUD_DEPLOYMENT.md)
+**Detailed Guide**: See [CLOUD_DEPLOYMENT.md](CLOUD_DEPLOYMENT.md)
 
 **Supported Providers:**
-- ✅ DigitalOcean ($6/month)
-- ✅ AWS EC2 ($5-10/month)
-- ✅ Google Cloud (Free tier)
-- ✅ Vultr, Linode, Azure
+- DigitalOcean ($6/month)
+- AWS EC2 ($5-10/month)
+- Google Cloud (Free tier)
+- Vultr, Linode, Azure
 
 ---
 
-## 📊 Installation Progress
+## Installation Progress
 
 Installation mein ye 15 steps hain (live tracking):
 
-1. ✅ **Step 1**: System Update
-2. ✅ **Step 2**: Python & Dependencies
-3. ✅ **Step 3**: MariaDB Database
-4. ✅ **Step 4**: Redis Cache
-5. ✅ **Step 5**: Nginx Web Server
-6. ✅ **Step 6**: wkhtmltopdf
-7. ✅ **Step 7**: Node.js & Yarn
-8. ✅ **Step 8**: Frappe Bench
-9. ✅ **Step 9**: Bench Initialization
-10. ✅ **Step 10**: MariaDB Configuration
-11. ✅ **Step 11**: Create Site
-12. ✅ **Step 12**: Install ERPNext App
-13. ✅ **Step 13**: Production Setup
-14. ✅ **Step 14**: Security Setup
-15. ✅ **Step 15**: Optimization
+1.  **Step 1**: System Update
+2.  **Step 2**: Python & Dependencies
+3.  **Step 3**: MariaDB Database
+4.  **Step 4**: Redis Cache
+5.  **Step 5**: Nginx Web Server
+6.  **Step 6**: wkhtmltopdf
+7.  **Step 7**: Node.js & Yarn
+8.  **Step 8**: Frappe Bench
+9.  **Step 9**: Bench Initialization
+10. **Step 10**: MariaDB Configuration
+11. **Step 11**: Create Site
+12. **Step 12**: Install ERPNext App
+13. **Step 13**: Production Setup
+14. **Step 14**: Security Setup
+15. **Step 15**: Optimization
 
 **Time**: 15-45 minutes
 
 ---
 
-## 🌐 Access ERPNext
+##  Access ERPNext
 
 Installation complete hone ke baad:
 
@@ -179,7 +179,7 @@ bench start
 
 ---
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 ### Web GUI Nahi Khul Raha?
 ```bash
@@ -207,7 +207,7 @@ sudo pip3 install flask
 
 ---
 
-## 📝 Useful Commands
+##  Useful Commands
 
 ### Service Management
 ```bash
@@ -250,7 +250,7 @@ sudo bash uninstall.sh
 
 ---
 
-## 🔐 Security Tips
+##  Security Tips
 
 ### Strong Passwords
 - Minimum 8 characters
@@ -269,7 +269,7 @@ sudo bench setup lets-encrypt YOUR_SITE_NAME
 
 ---
 
-## 📞 Support
+##  Support
 
 ### Developer
 - **Name**: Umair Wali
@@ -283,7 +283,7 @@ Contact with:
 
 ---
 
-## ⚡ Quick Reference
+##  Quick Reference
 
 | Task | Command |
 |------|---------|
